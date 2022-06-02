@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./category-item.styles.scss";
 
 const CategoryItem = ({ category }) => {
@@ -12,10 +13,13 @@ const CategoryItem = ({ category }) => {
           backgroundImage: `url(${imageUrl})`,
         }}
       />
-      <div className="category-body-container">
+      <Link
+        className="category-body-container"
+        to={`shop/${title.toLowerCase()}`}
+      >
         <h2>{title}</h2>
         <p>Shop now</p>
-      </div>
+      </Link>
     </div>
   );
 };
