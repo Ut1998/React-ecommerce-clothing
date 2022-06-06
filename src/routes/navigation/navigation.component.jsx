@@ -11,7 +11,7 @@ import { ReactComponent as CrownLogo } from "../../assets/crown.svg";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component";
-import { selectCurrentUser } from "../../store/user.selector";
+import { selectCurrentUser } from "../../store/user/user.selector";
 
 const Navigation = () => {
   const currentUser = useSelector(selectCurrentUser);
