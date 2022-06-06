@@ -71,7 +71,7 @@ export const getCategoriesAndDocuments = async () => {
     return acc;
   }, {});
 
-  return categoryMap; 
+  return categoryMap;
 };
 
 export const createUserDocumentFromAuth = async (
@@ -119,6 +119,7 @@ export const signInAuthUserWithEmailAndPassword = async (email, password) => {
 };
 
 export const signOutUser = () => {
+  console.log("signed out");
   signOut(auth);
 };
 

@@ -1,4 +1,4 @@
-import { USER_ACTION_TYPE } from "./user.type";
+import { USER_ACTION_TYPE } from "./categories.type";
 
 const INITIAL_STATE = {
   currentUser: null,
